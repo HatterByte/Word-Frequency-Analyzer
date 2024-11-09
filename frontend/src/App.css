@@ -1,0 +1,220 @@
+body {
+    background-color: #1b1d2a;
+    color: #c3c8d4;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#report-content {
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+    padding-top: 0;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.wordcloud-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.word-cloud-box {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    background-color: #2a2d3d;
+    border: 2px solid #3b4b66;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    resize: none;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 12px;
+    border: 1px solid #3b4b66;
+    border-radius: 8px;
+    background-color: #2a2d3d;
+    color: #ffffff;
+    outline: none;
+    width: 350px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #5a5f75;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #4e5c85;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #6979a8;
+}
+
+table {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 25px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    border: none;
+    padding: 15px;
+    text-align: center;
+    color: #d1d6e0;
+}
+
+th {
+    background-color: #3b4b66;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #2a2d3d;
+}
+
+tr:nth-child(odd) {
+    background-color: #1f2233;
+}
+
+tr:hover {
+    background-color: #3b4b66;
+}
+
+.error-message {
+    color: #ffffff;
+    background-color: #e74c3c;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; 
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 50%;
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 50%;
+        font-size: 0.9rem;
+    }
+
+    .word-cloud-box {
+        height: 300px;
+        padding: 10px;
+    }
+
+    table {
+        max-width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .error-message {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .word-cloud-box {
+        height: 250px;
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="number"], button {
+        width: 50%;
+    }
+
+    table {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
