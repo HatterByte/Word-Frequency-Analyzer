@@ -31,10 +31,12 @@ Make sure you have Node.js and npm installed. You can download them from [here](
 2. Navigate to the project directory:
     ```bash
     cd Word-Frequency-Analyzer
-
 3. Install the dependencies:
     ```bash
     npm install
+    cd frontend
+    npm install --legacy-peer-deps
+    cd..
 4. Start the development server (runs both front-end and back-end):
     ```bash
     npm run dev
