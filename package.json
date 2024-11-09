@@ -8,7 +8,8 @@
   "scripts": {
     "start": "react-scripts start",  
     "server": "node server.js",     
-    "dev": "concurrently \"npm run server\" \"cd frontend && npm run start\""
+    "dev": "concurrently \"npm run server\" \"cd frontend && npm run start\"",
+    "install:all": "npm install && cd frontend && npm install --legacy-peer-deps && cd .."
   },
   "devDependencies": {
     "concurrently": "^9.1.0"
