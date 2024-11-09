@@ -54,4 +54,6 @@ Here are some screenshots showcasing the app:
 ![Frequency Table](sample_imgs/report_table.png)
 ![Word Cloud](sample_imgs/word_cloud.png)
 ##### 3. PDF Report
-![Report PDF](sample_imgs/pdf_report.png)
+<p align="center">
+  <img src="sample_imgs/pdf_report.png" alt="Report PDF" width="600"/>
+</p>
